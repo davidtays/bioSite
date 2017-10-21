@@ -28,6 +28,21 @@ h1{
 header img{
 	
 }
+nav ul {
+	margin-right: 23%;
+	text-align: center;
+	list-style-type: none;
+	background-color: #6D6875;
+	overflow: hidden;
+}
+nav ul li {
+	padding: 5px 25px;
+	display: inline-block;
+}
+nav a {
+	color: #FFF;
+	text-decoration: none;
+}
 h2, ul, li{
 	color: #B5838D;
 }
@@ -66,4 +81,38 @@ ul{
 footer{
 	text-align: center;
 	margin: 0% 20% 0% 20%;
+}
+@media only screen and (min-width : 150px) and (max-width : 780px) {
+	
+    body {
+        background:  #FFCDB2;
+    }
+	#sidebar {
+		position: relative;
+		float: none;
+		width: 100%;
+	}
+	#main {
+		margin: 1%;
+	}
+	nav ul{ 
+	margin-right: 0px;
+	text-align: center;
+	}
+	nav ul li {
+	display: block;
+	max-width: 100%;
+    }
+}
+@media only screen and (min-width : 780px) and (max-width : 1280px) {
+	body {
+        background:  #FFCDB2;
+    }
+	nav ul{ 
+	margin-right: 0px;
+	text-align: right;
+	}
+	#main {
+		margin-right: 0px; }
+	
 }
