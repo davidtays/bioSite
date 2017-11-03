@@ -1,9 +1,11 @@
+/*  base font size and background color- apricot  */
 html{
 	
 	font-size: 22px;
 	background-color: #FFCDB2;
 	
 }
+/* double border along right side of page and heart background logo*/
 body{
 	margin-right: 3%;
 	border-style: double;
@@ -14,16 +16,17 @@ body{
 header{
     margin-top: 2%;
 }
+/* header fonts are imported - https://fonts.googleapis.com/css?family=Alex+Brush%7COpen+Sans */
 h1, h2{
 	font-family: 'Alex Brush', Georgia, sans-serif;
 }
+/* color name: wewak */
 h1{
 	text-align: center;
 	color: #E5989B;
 }
-header img{
-	
-}
+/* navigator list has a right margin so background-image is not covered up
+  and a  background-color of Scarpa Flow*/
 nav ul {
 	margin-right: 23%;
 	text-align: center;
@@ -31,6 +34,7 @@ nav ul {
 	background-color: #6D6875;
 	overflow: hidden;
 }
+/* the list items are spaced */
 nav ul li {
 	padding: 5px 25px;
 	display: inline-block;
@@ -39,9 +43,11 @@ nav a {
 	color: #FFF;
 	text-decoration: none;
 }
+/* color- english lavender */
 h2, ul, li{
 	color: #B5838D;
 }
+/* color - Scarpa Flow and imported font from https://fonts.googleapis.com/css?family=Alex+Brush%7COpen+Sans -- uses viewport width to make font-size change with the view */
 p{
 	font-family: 'Open Sans', Verdana, sans-serif;
 	font-size: 1.5vw;
@@ -66,6 +72,7 @@ ul{
 	
 	float: left;
 }
+/* the side bar stays put when scrolling, the color - rosebud. */
 #sidebar{
 	position: fixed;
 	font-size: 1.5vw;
@@ -80,11 +87,9 @@ footer{
 	text-align: center;
 	margin: 0% 20% 0% 20%;
 }
-@media only screen and (min-width : 150px) and (max-width : 840px) {
+@media screen and (min-width : 150px) and (max-width : 840px) {
 	
-    body {
-        background:  #FFCDB2;
-    }
+    
 	#sidebar {
 		position: relative;
 		float: none;
@@ -95,24 +100,24 @@ footer{
 		margin: 1%;
 	}
 	nav ul{ 
-	margin-right: 0px;
 	text-align: center;
+	margin-right: 0px;
 	}
 	nav ul li {
 	display: block;
-	max-width: 100%;
-    }
+	width: 100%;
+	}
 	p {
 		font-size: 3.2vw;
 	}
 }
-@media only screen and (min-width : 840px) and (max-width : 1280px) {
+@media screen and (min-width : 840px) and (max-width : 1280px) {
 	body {
         background:  #FFCDB2;
     }
 	nav ul{ 
-	margin-right: 0px;
 	text-align: right;
+	margin-right: 0px;
 	}
 	#main {
 		margin-right: 0px; }
