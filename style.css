@@ -53,7 +53,7 @@ nav a, footer a, #sidebar a{
 }
 
 /* color- english lavender */
-h2, ul, li, #sidebar a{
+h2, ul, li,footer a, #sidebar a{
 	color: #B5838D;
 }
 
