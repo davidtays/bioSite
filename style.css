@@ -5,6 +5,7 @@ html{
 	background-color: #FFCDB2;
 	
 }
+
 /* double border along right side of page and heart background logo*/
 body{
 	margin-right: 3%;
@@ -12,18 +13,22 @@ body{
 	border-width: 0px 45px 0px 0px;
 	border-color: #777;
 }
+
 header{
     margin-top: 2%;
 }
+
 /* header fonts are imported - https://fonts.googleapis.com/css?family=Alex+Brush%7COpen+Sans */
 h1, h2, footer p{
 	font-family: 'Alex Brush', Georgia, sans-serif;
 }
+
 /* color name: wewak */
 h1{
 	text-align: center;
 	color: #E5989B;
 }
+
 /* navigator list has a right margin so background-image is not covered up
   and a  background-color of Scarpa Flow*/
 nav ul {
@@ -32,19 +37,26 @@ nav ul {
 	background-color: #6D6875;
 	overflow: hidden;
 }
+
 /* the list items are spaced */
 nav ul li {
 	padding: 5px 25px;
 	display: inline-block;
 }
+
 nav a {
 	color: #FFF;
+}
+
+nav a, footer a, #sidebar a{
 	text-decoration: none;
 }
+
 /* color- english lavender */
 h2, ul, li, #sidebar a{
 	color: #B5838D;
 }
+
 /* color - Scarpa Flow and imported font from https://fonts.googleapis.com/css?family=Alex+Brush%7COpen+Sans -- uses viewport width to make font-size change with the view */
 p{
 	font-family: 'Open Sans', Verdana, sans-serif;
@@ -52,28 +64,39 @@ p{
 	color: #6D6875;
 	margin-right: 25%;
 }
+
+p, footer a, #sidebar a{
+	font-family: 'Open Sans', Verdana, sans-serif;	
+}
+
 #main p:first-letter{
 	font-size: 200%;
 }
+
 ul{
 	list-style: none;
 }
+
 #main, #main img, #sidebar, h2, footer{
 	-moz-box-shadow: 5px 5px 5px #777;
 	-webkit-box-shadow: 5px 5px 5px #777;
 	box-shadow: 5px 5px 5px #777;
 }
+
 #main{
 	margin: 10% 15% 10% 30%;
 }
+
 #main img{
-	
+	margin-right: 10px;
 	float: left;
 }
+
 #main img:hover {
 	width: 450px;
 	height: 339px;
 }
+
 /* the side bar stays put when scrolling, the color - rosebud. */
 #sidebar{
 	position: fixed;
@@ -91,12 +114,15 @@ footer{
 	padding: 5% 0% 0% 15%;
 	background:  #FFCDB2 url('images/biositeTribal.png') no-repeat top center;
 }
+
 footer a{
 		display: none;
-	}
+}
+
 footer p{
 	padding-top: 10%;
 }
+
 footer p, #sidebar a{
 	font-size: 90%;
 }
@@ -126,6 +152,9 @@ footer p, #sidebar a{
 	p {
 		font-size: 3.2vw;
 	}
+	footer{
+		margin-left: 0%;
+	}
 	footer p{
 		padding-top: 50%;
 	}
@@ -133,7 +162,9 @@ footer p, #sidebar a{
 		display: block;
 	}
 }
+
 @media screen and (min-width : 840px) and (max-width : 1280px) {
+	
 	body {
         background:  #FFCDB2;
     }
@@ -144,12 +175,5 @@ footer p, #sidebar a{
 		margin-right: 0px; }
 	footer p{
 		padding-top: 20%;
-	}
-	footer a{
-		display: block;
-	}
-	
-	#sidebar a{
-		display: none;
 	}
 }
